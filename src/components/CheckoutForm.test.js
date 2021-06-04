@@ -11,5 +11,13 @@ test("form header renders", () => {
 });
 
 test("form shows success message on submit with form details", () => {
-    render (<CheckoutForm/>)
+    render (<CheckoutForm/>);
+
+    const firstName = screen.getByLableText(/First Name/i);
+    const lastName = screen.getByLabelText(/Last Name/i);
+    const address = screen.getByLabelText(/Address/i);
+    const city = screen.getByLableText(/City/i);
+    const state = screen.getByLableText(/State/i);
+    const zip = screen.getByLableText(/Zip/i);
+    const submitButton = document.querySelector('button');
 });
