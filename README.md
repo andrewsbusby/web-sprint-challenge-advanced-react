@@ -136,9 +136,14 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What are the main differences between a stateful and a functional component?
-
+  Stateful components aren't things that you normally see rendered on a page. They are what hold state(data) for other components or functions. 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
-
+  The componentWillMoutn function is called at the beginning of the life cycle of the app. It will let you know if the component mounted or if there was an issue. 
+  The componentWillUpdate will be called if something changes on the DOM from user interaction with the site. Like a adding something to a list. It will update the state of the list to where it is now rendered as well. 
 3. Define stateful logic.
-
+  Stateful logic is what runs behind the seens. It is what holds state for a function or a components. It can be in its on file as a hook to update when something changes. 
 4. What are the three step of creating a successful test? What is done in each phase?
+  The 3 steps for a successful test are Arrange, Act, and Assert.
+  Arrange is where you set your self up for success. We can see if a certain components renders here. 
+  Act is where you start to look for certain aspects of what you are testing. Like looking for a specific function or input that they user interacts with. 
+  Assert is where we make sure what we are looking for is rendering as it should or that input if functioning as it should. Such as a text input working correctly. 
